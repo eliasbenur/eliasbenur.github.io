@@ -12,41 +12,189 @@
 		<link rel="stylesheet" type="text/css" href="css/portfolio.css">
 	</head>
 	<body>
+
+		<!-- Nav Bar -->
+		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand" href="#">Animated Dropdown</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Click Me!
+					</a>
+					<!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
+					<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+					</li>
+				</ul>
+				</div>
+			</div>
+		</nav>
+
 		<!-- Video Header -->
 		<header>
 			<div class="overlay"></div>
 			<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-			<source src="videos/header_video.mp4" type="video/mp4">
+			<source src="videos/gris_header1.mp4" type="video/mp4">
 			</video>
 			<div class="container h-100">
 				<div class="d-flex h-100 text-center align-items-center">
 					<div class="w-100 text-white">
-						<h1 class="display-3">Video Header</h1>
-						<p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
+						<h1 class="display-2">Elias Bennour</h1>
+						<h1 class="display-5">Game Programmer</h1>
 					</div>
 				</div>
 			</div>
 		</header>
 
-		<!-- Random Text -->
+		<!-- ABOUT ME Text -->
 		<section class="my-5">
 			<div class="container">
 			  <div class="row">
 				<div class="col-md-8 mx-auto">
-				  <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are build into Bootstrap 4.</p>
-				  <p>The overlay color can be changed by changing the <code>background-color</code> of the <code>.overlay</code> class in the CSS.</p>
-				  <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
-				  <p class="mb-0">
-					Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
-				  </p>
+					<h1 class="display-5">About me</h1>
+				  	<p>Wellcome to my Portfolio, I'm Elias a Game Programmer & Designer.</p>
+				  	<p>My main interests are gameplay and AI. I love making alive all kinds of game mechanics and tweaking them until they feel awesome, such as jump feeling, shooting feedback, etc. For me, it's like taking ideas or conceptions and making them real and playable for the others, making them feel fast, agile, strong, fear depending on the mechanics objectives. " I'm a mad scientist, It's so cool! "</p>
+					<p>Actually, I'm cursing at mid time a Master Degree of Game Programming and Design at the University of IIM in Paris, France. In my free time I work on some personal projects and of course learning new thinks every time i can.</p>
+					<p>Here you can view my résumé, a few of my personal projects,such a game jams or school projects and some fun coding or game stuff I do in my free time.</p>
+					<p>I’d love to chat about job opportunities, projects I’ve worked on, diversity in tech, memes, or whatever is on your mind.</p>
 				</div>
 			  </div>
 			</div>
-		  </section>
+		</section>
+
+		<!-- Page Content -->
+		<div class="container">
+
+			<!-- Heading -->
+			<h1 class="my-4">Page Heading
+				<small>Secondary Text</small>
+			</h1>
+		
+			<!-- Project One -->
+			<div class="row">
+				<div class="col-md-7">
+				<a href="#">
+					<img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+				</a>
+				</div>
+				<div class="col-md-5">
+				<h3>Project One</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+				<a class="btn btn-primary" href="#">View Project</a>
+				</div>
+			</div>
+			<!-- /.row -->
+		
+			<hr>
+		
+			<!-- Project Two -->
+			<div class="row">
+				<div class="col-md-7">
+				<a href="#">
+					<img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+				</a>
+				</div>
+				<div class="col-md-5">
+				<h3>Project Two</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+				<a class="btn btn-primary" href="#">View Project</a>
+				</div>
+			</div>
+			<!-- /.row -->
+		
+			<hr>
+		
+			<!-- Project Three -->
+			<div class="row">
+				<div class="col-md-7">
+				<a href="#">
+					<img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+				</a>
+				</div>
+				<div class="col-md-5">
+				<h3>Project Three</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+				<a class="btn btn-primary" href="#">View Project</a>
+				</div>
+			</div>
+			<!-- /.row -->
+		
+			<hr>
+		
+			<!-- Project Four -->
+			<div class="row">
+		
+				<div class="col-md-7">
+				<a href="#">
+					<img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+				</a>
+				</div>
+				<div class="col-md-5">
+				<h3>Project Four</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
+				<a class="btn btn-primary" href="#">View Project</a>
+				</div>
+			</div>
+			<!-- /.row -->
+
+			<!-- Related Projects Row -->
+			<h3 class="my-4">Related Projects</h3>
+
+			<div class="row">
+
+				<div class="col-md-3 col-sm-6 mb-4">
+				<a href="#">
+						<img class="img-fluid" src="http://placehold.it/500x300" alt="">
+					</a>
+				</div>
+
+				<div class="col-md-3 col-sm-6 mb-4">
+				<a href="#">
+						<img class="img-fluid" src="http://placehold.it/500x300" alt="">
+					</a>
+				</div>
+
+				<div class="col-md-3 col-sm-6 mb-4">
+				<a href="#">
+						<img class="img-fluid" src="http://placehold.it/500x300" alt="">
+					</a>
+				</div>
+
+				<div class="col-md-3 col-sm-6 mb-4">
+				<a href="#">
+						<img class="img-fluid" src="http://placehold.it/500x300" alt="">
+					</a>
+				</div>
+
+			</div>
+			<!-- /.row -->
+		
+		</div>
+		<!-- /.container -->
+
+		<!-- Footer -->
+		<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+			<div class="container text-center">
+				<small>Copyright &copy; Elias BENNOUR ESSABBAQ</small>
+			</div>
+		</footer>
+		<!-- ./footer -->
 
 		<!-- JS links -->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="js/portfolio.js"></script>
 	</body>
 </html>
